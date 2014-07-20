@@ -1,0 +1,17 @@
+body{
+/*margin-left: 100px;*/
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+
+}
+.text_field{
+	width: 358px;
+}
+.center_text{
+	text-align: center;
+}
+.selected{
+	background-color: #B4B4B4;
+}
