@@ -11,8 +11,6 @@
 	<?php 
 		require_once("database_config.php");
     
-		$selected = mysql_select_db("std");
-  		mysql_query("SET NAMES UTF8");
 
   		$std_id = $_GET['std_id'];
   		$std_fn = $_GET['std_fn'];

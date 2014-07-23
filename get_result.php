@@ -10,8 +10,7 @@
 	<?php
 		require_once("database_config.php");
 		
-		$selected = mysql_select_db("std");
-  		mysql_query("SET NAMES UTF8");
+		
   		$where_status = true;
 
   		if ($_GET['std_id'] == '' && $_GET['std_name'] == '' && $_GET['std_surname'] == '') {
@@ -151,7 +150,7 @@
 	    				<td>".$row['stdS']."</td>
 	    				<td>".$row['stdME']."</td>
 	    				<td>".$degree."</td>
-	    				<td><a href='edit.php?std_id=".$row['stdID']."&std_name=".$row['stdFn']."&std_surname=".$row['stdLn']."&std_major_in=".$row['stdMS']."&std_major_out=".$row['stdME']."&std_status=".$row['stdS']."&std_degree=".$row['stdDegree']."'>Edit</a>
+	    				<td><a href='edit.php?std_id=".$row['stdID']."'>Edit</a>
 	    			</tr>";
 	    	}
 	    	echo "</table>";

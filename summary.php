@@ -10,8 +10,6 @@
 		$num_gen = 42;
 		require_once("database_config.php");
 		
-		$selected = mysql_select_db("std");
-  		mysql_query("SET NAMES UTF8");
 
 	 ?>
 <body>

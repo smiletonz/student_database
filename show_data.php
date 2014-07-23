@@ -10,8 +10,7 @@
 	<h2>ข้อมูลนักศึกษา</h2>
 	<?php 
 		require_once("database_config.php");
-		$selected = mysql_select_db("std");
-		mysql_query("SET NAMES UTF8");
+		
 
 		$query = "SELECT * FROM std WHERE stdID = '".$_GET['std_id']."';";
 		$results = mysql_query($query);
@@ -25,7 +24,7 @@
 		echo "<strong>สาขาวิชาแรกเข้า : </strong>".$row['stdMS']."</br>";
 		echo "<strong>สาขาวิชาที่จบ : </strong>".$row['stdME']."</br>";
 		if($row['stdDegree']=='0'){
-			echo "<strong>สถานะเกียรตินิยม : </strong>ไม่ได้เกียรตินิยม</br>";
+			echo "<strong>สถานะเกียรตินิยม : </strong> - </br>";
 		}
 		else if($row['stdDegree']=='1'){
 			echo "<strong>สถานะเกียรตินิยม : </strong>เกียรตินิยมอันดับหนึ่ง</br>";
