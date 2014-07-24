@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>Search Result</title>
+	<title>Show List</title>
 	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -106,8 +106,8 @@
 		$results = mysql_query($query) or die("กรุณาระบุรายการค้นหา");
 
   		if(mysql_num_rows($results)!=0){
-	    	echo "<h2>ผลการค้นหา</h2>
-	    			<div>จำนวนรายการทั้งหมด ".mysql_num_rows($results)." รายการ</div>
+	    	echo "<h2>รายชื่อนักศึกษา</h2>
+	    			
 	        <table class='table table-bordered' border='1' style='width:800px;padding-left:100px'>
 	        	<tr>
 	        		<th>รหัสนักศึกษา</th>
@@ -118,7 +118,7 @@
 	        		<th>สถานะ</th>
 	        		<th>สาขาวิชาที่จบ</th>
 	        		<th>เกียรตินิยม</th>
-	        		<th>แก้ไข</th>
+	        		
 	        	</tr>
 	    	";
 
@@ -142,7 +142,7 @@
 					$degree = " - ";
 				}
 				echo "<tr>
-	    				<td><a href='show_data.php?std_id=".$row['stdID']."'>".$row['stdID']."</a></td>
+	    				<td>".$row['stdID']."</a></td>
 	    				<td>".$row['stdP']."</td>
 	    				<td>".$row['stdFn']."</td>
 	    				<td>".$row['stdLn']."</td>
@@ -150,14 +150,14 @@
 	    				<td>".$row['stdS']."</td>
 	    				<td>".$row['stdME']."</td>
 	    				<td>".$degree."</td>
-	    				<td><a href='edit.php?std_id=".$row['stdID']."'>Edit</a>
+	    				
 	    			</tr>";
 	    	}
 	    	echo "</table>";
 	    }
     	else{
-    		echo "ไม่พบข้อมูลที่ตรงกันกรุณาระบุรายการค้นหาใหม่";
-    		echo "</br><button type='submit' class='btn btn-primary' onclick='window.location=\"search.php\"';>กลับ</button>";
+    		echo "ไม่มีข้อมูล";
+    		
     	}
     	mysql_close($con);
 	?>

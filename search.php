@@ -25,7 +25,7 @@
 						</select>
 		</div>
 		<div class="form-group ">
-						<label for="std_status">สถานภาพ</label>
+						<label for="std_status">สถานะนักศึกษา</label>
 						<select name="std_status" id = 'std_status' class="form-control text_field">
 							<option value="all" selected="">ทั้งหมด</option>
 							<option value="ปกติ">ปกติ</option>

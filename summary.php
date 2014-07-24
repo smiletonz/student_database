@@ -135,26 +135,26 @@
 				$total_status_in_year = $female_status_in_year + $male_status_in_year;
 				$total_status_all+=$total_status_in_year;
 // ######################################################################
-
+				$num_id = strval($i+14);
 				echo "<tr>
-						<td>".$i."</td>
-						<td>".$year."</td>
+						<td><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=all&std_status=all&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$i."</a></td>
+						<td><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=all&std_status=all&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$year."</a></td>
 
-						<td>".$male_in_year."</td>
-						<td>".$female_in_year."</td>
-						<td class='info'>".$total_in_year."</td>
+						<td><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=ชาย&std_status=all&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$male_in_year."</a></td>
+						<td><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=หญิง&std_status=all&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$female_in_year."</a></td>
+						<td class='info'><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=all&std_status=all&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$total_in_year."</a></td>
 
-						<td>".$male_success_in_year."</td>
-						<td>".$female_success_in_year."</td>
-						<td class='success'>".$total_success_in_year."</td>
+						<td><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=ชาย&std_status=จบการศึกษา&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$male_success_in_year."</a></td>
+						<td><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=หญิง&std_status=จบการศึกษา&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$female_success_in_year."</a></td>
+						<td class='success'><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=all&std_status=จบการศึกษา&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$total_success_in_year."<a/></td>
 
-						<td>".$male_unsuccess_in_year."</td>
-						<td>".$female_unsuccess_in_year."</td>
-						<td class='danger'>".$total_unsuccess_in_year."</td>
+						<td><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=ชาย&std_status=พ้นสภาพ&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$male_unsuccess_in_year."<a/></td>
+						<td><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=หญิง&std_status=พ้นสภาพ&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$female_unsuccess_in_year."<a/></td>
+						<td class='danger'><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=all&std_status=พ้นสภาพ&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$total_unsuccess_in_year."<a/></td>
 
-						<td>".$male_normal_in_year."</td>
-						<td>".$female_normal_in_year."</td>
-						<td class='warning'>".$total_normal_in_year."</td>
+						<td><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=ชาย&std_status=ปกติ&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$male_normal_in_year."<a/></td>
+						<td><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=หญิง&std_status=ปกติ&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$female_normal_in_year."<a/></td>
+						<td class='warning'><a href='show_list.php?std_id=&std_name=&std_surname=&std_gender=all&std_status=ปกติ&std_major=all&std_gen=07".$num_id."&std_degree=all'>".$total_normal_in_year."<a/></td>
 
 						<td>".$male_status_in_year."</td>
 						<td>".$female_status_in_year."</td>

@@ -39,7 +39,6 @@
 		$std_major_in = $row['stdMS'];
 		$std_major_out = $row['stdME'];
 		$std_status = $row['stdS'];
-		$std_degree = $row['stdDegree'];
 		$std_address = $row['stdAddress'];
 		$std_phone1 = $row['stdPhone1'];
 		$std_phone2 = $row['stdPhone2'];
@@ -93,7 +92,7 @@
 						</select>
 		</div>
 		<div class="form-group ">
-						<label for="std_status">สถานะ</label>
+						<label for="std_status">สถานะนักศึกษา</label>
 						<select name="std_status" id = 'std_status'  class="form-control text_field">
 							<option selected="selected" class = "selected"value="<?php echo $std_status; ?>"><?php echo $std_status; ?></option>
 
@@ -138,12 +137,12 @@
 
   		<div class="form-group">
   			<label for="std_status">อีเมลล์</label>
-    		<input type="text" class="form-control text_field" name="std_phone3"  placeholder="อีเมลล์" value = "<?php echo $std_email; ?>">
+    		<input type="text" class="form-control text_field" name="std_email"  placeholder="อีเมลล์" value = "<?php echo $std_email; ?>">
 
   		</div>
   		<div class="form-group">
   			<label for="std_status">เฟซบุ๊ค</label>
-    		<input type="text" class="form-control text_field" name="std_phone3"  placeholder="เฟซบุ๊ค" value = "<?php echo $std_facebook;?>">
+    		<input type="text" class="form-control text_field" name="std_facebook"  placeholder="เฟซบุ๊ค" value = "<?php echo $std_facebook;?>">
 
   		</div>
 		

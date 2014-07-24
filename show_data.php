@@ -32,10 +32,14 @@
 		else if($row['stdDegree']=='2'){
 			echo "<strong>สถานะเกียรตินิยม : </strong>เกียรตินิยมอันดับสอง</br>";
 		}
+		echo "<strong>เบอร์โทร 1 : </strong>".$row['stdPhone1']."</br>";
+		echo "<strong>เบอร์โทร 2 : </strong>".$row['stdPhone1']."</br>";
+		echo "<strong>เบอร์โทร 3 : </strong>".$row['stdPhone1']."</br>";
 		echo "<strong>ที่อยู่ : </strong>".$row['stdAddress']."</br>";
 		echo "<strong>อีเมลล์ : </strong>".$row['stdEmail']."</br>";
 		echo "<strong>เฟซบุ๊ก : </strong>".$row['stdFacebook']."</br>";
-	 ?>
 
+	 ?>
+		<button type="button" class="btn btn-info" onclick="window.location='search.php';">กลับหน้าค้นหา</button>
 </body>
 </html>

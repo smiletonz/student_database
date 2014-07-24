@@ -20,23 +20,22 @@
   		$std_status = $_GET['std_status'];
   		$std_degree = $_GET['std_degree'];
 
-  		echo "<br/>".$std_id;
-  		echo "<br/>".$std_fn;
-  		echo "<br/>".$std_ln;
-  		echo "<br/>".$std_major_in;
-  		echo "<br/>".$std_major_out;
-  		echo "<br/>".$std_status;
-  		echo $std_degree;
+      $std_address = $_GET['std_address'];
+      $std_phone1 = $_GET['std_phone1'];
+      $std_phone2 = $_GET['std_phone2'];
+      $std_phone3 = $_GET['std_phone3'];
+      $std_email = $_GET['std_email'];
+      $std_facebook = $_GET['std_facebook'];
 
-  		$query ="UPDATE `std` SET `stdFn` = '".$std_fn."', `stdLn` = '".$std_ln."', `stdMS` = '".$std_major_in."', `stdDegree` = '".$std_degree."', `stdME` = '".$std_major_out."', `stdS` = '".$std_status."' WHERE `stdID` = '".$std_id."';";
+
+  		$query ="UPDATE `std` SET `stdFacebook` = '".$std_facebook."',`stdEmail` = '".$std_email."',`stdPhone3` = '".$std_phone3."',`stdPhone2` = '".$std_phone2."',`stdPhone1` = '".$std_phone1."',`stdAddress` = '".$std_address."',`stdFn` = '".$std_fn."', `stdLn` = '".$std_ln."', `stdMS` = '".$std_major_in."', `stdDegree` = '".$std_degree."', `stdME` = '".$std_major_out."', `stdS` = '".$std_status."' WHERE `stdID` = '".$std_id."';";
   		
-  		echo "<br/>".$query;
+  		//echo "<br/>".$query;
+      echo "Update Complete !!!";
+
   		mysql_query($query);
   		mysql_close($con);
 	 ?>
-
-<script type="text/javascript">
-			//window.location.href = 'show_data.php?std_id="07530544"';
-</script>
+  <button type="button" class="btn btn-info" onclick="window.location='search.php';">กลับหน้าค้นหา</button>
 </body>
 </html>
