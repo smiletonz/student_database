@@ -10,6 +10,7 @@
 		
 		require_once("database_config.php");
 
+		
   		$year4 = strval(idate('Y') - 1961);
   		$year5 = strval(idate('Y') - 1962);
   		$year6 = strval(idate('Y') - 1963);
@@ -41,5 +42,8 @@
 		$message =  "มีผู้สำเร็จการศึกษาใหม่ทั้งหมด ".$count."คน";
 		echo "<script type='text/javascript'>alert('$message');</script>";
 	 ?>
+	 <script type="text/javascript">
+			window.location.href = 'index.php';
+	</script>
 </body>
 </html>

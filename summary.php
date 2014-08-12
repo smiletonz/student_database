@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head><?php
-		$num_gen = 42;
+
+		$num_gen = idate('Y') - 1971;
 		require_once("database_config.php");
 		
 

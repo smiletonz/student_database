@@ -15,8 +15,6 @@
 <h2>Edit</h2>
 
 
-
-
 <?php 
 		require_once("database_config.php");
 
